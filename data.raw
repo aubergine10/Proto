@@ -1,3 +1,7 @@
+-- Factorio 0.14.13
+-- Generated via data-final-fixes.lua with following script:
+-- log( serpent.block( data.raw, {comment = false, numformat = '%1.8g' } ) )
+
 {
   accumulator = {
     accumulator = {
@@ -5194,7 +5198,7 @@
   },
   ["cargo-wagon"] = {
     ["cargo-wagon"] = {
-      air_resistance = 0.004,
+      air_resistance = 0.01,
       back_light = {
         {
           add_perspective = true,
@@ -5466,11 +5470,11 @@
       selection_box = {
         {
           -1,
-          -3
+          -2.703125
         },
         {
           1,
-          3
+          3.296875
         }
       },
       sound_minimum_speed = 0.5,
@@ -11394,7 +11398,7 @@
     },
     ["brown-asterisk"] = {
       autoplace = {
-        max_probability = 0.02,
+        max_probability = 0.005,
         order = "a[doodad]-z[other]",
         peaks = {
           {
@@ -11847,7 +11851,7 @@
     },
     ["brown-coral-mini"] = {
       autoplace = {
-        max_probability = 0.1,
+        max_probability = 0.025,
         order = "a[doodad]-z[other]",
         peaks = {
           {
@@ -11919,6 +11923,7 @@
     },
     ["brown-fluff"] = {
       autoplace = {
+        max_probability = 0.25,
         order = "a[doodad]-d[fluff]",
         peaks = {
           {
@@ -12030,6 +12035,7 @@
     },
     ["brown-fluff-dry"] = {
       autoplace = {
+        max_probability = 0.25,
         order = "a[doodad]-d[fluff]",
         peaks = {
           {
@@ -12235,7 +12241,7 @@
     },
     garballo = {
       autoplace = {
-        max_probability = 0.8,
+        max_probability = 0.2,
         order = "a[doodad]-e[garballo]",
         peaks = {
           {
@@ -12374,7 +12380,7 @@
     },
     ["garballo-mini-dry"] = {
       autoplace = {
-        max_probability = 0.8,
+        max_probability = 0.2,
         order = "a[doodad]-e[garballo]",
         peaks = {
           {
@@ -12501,7 +12507,7 @@
     },
     ["green-asterisk"] = {
       autoplace = {
-        max_probability = 0.05,
+        max_probability = 0.0125,
         order = "a[doodad]-z[other]",
         peaks = {
           {
@@ -12613,7 +12619,7 @@
     },
     ["green-bush-mini"] = {
       autoplace = {
-        max_probability = 0.8,
+        max_probability = 0.2,
         order = "a[doodad]-e[garballo]",
         peaks = {
           {
@@ -12843,7 +12849,7 @@
     },
     ["green-coral-mini"] = {
       autoplace = {
-        max_probability = 0.15,
+        max_probability = 0.0375,
         order = "a[doodad]-z[other]",
         peaks = {
           {
@@ -13193,6 +13199,7 @@
     },
     ["green-pita"] = {
       autoplace = {
+        max_probability = 0.25,
         order = "a[doodad]-b[pita]",
         peaks = {
           {
@@ -13300,6 +13307,7 @@
     },
     ["green-pita-mini"] = {
       autoplace = {
+        max_probability = 0.25,
         order = "a[doodad]-b[pita]",
         peaks = {
           {
@@ -13505,7 +13513,7 @@
     },
     ["orange-coral-mini"] = {
       autoplace = {
-        max_probability = 0.15,
+        max_probability = 0.0375,
         order = "a[doodad]-z[other]",
         peaks = {
           {
@@ -13617,7 +13625,7 @@
     },
     ["red-asterisk"] = {
       autoplace = {
-        max_probability = 0.05,
+        max_probability = 0.0125,
         order = "a[doodad]-z[other]",
         peaks = {
           {
@@ -13705,6 +13713,7 @@
     ["root-A"] = {
       autoplace = {
         influence = 0.01,
+        max_probability = 0.25,
         order = "a[doodad]-z[other]"
       },
       flags = {
@@ -13834,6 +13843,7 @@
     ["root-B"] = {
       autoplace = {
         influence = 0.01,
+        max_probability = 0.25,
         order = "a[doodad]-z[other]"
       },
       flags = {
@@ -13952,6 +13962,7 @@
     },
     ["small-rock"] = {
       autoplace = {
+        max_probability = 0.25,
         order = "a[doodad]-a[rock]",
         peaks = {
           {
@@ -16862,7 +16873,7 @@
           line_length = 8,
           scale = 0.625,
           shift = {
-            -0.024414062,
+            -0.024414063,
             -0.56640625
           },
           tint = {
@@ -16940,7 +16951,7 @@
           scale = 0.625,
           shift = {
             -0.01953125,
-            -0.43457187
+            -0.43457188
           },
           tint = nil,
           width = 64
@@ -16976,7 +16987,7 @@
           scale = 0.625,
           shift = {
             0.009765625,
-            -0.40039062
+            -0.40039063
           },
           tint = nil,
           width = 54
@@ -17083,7 +17094,7 @@
           line_length = 8,
           scale = 0.625,
           shift = {
-            -0.043945312,
+            -0.043945313,
             -0.64941562
           },
           tint = nil,
@@ -21650,6 +21661,15 @@
       name = "flying-text",
       speed = 0.05,
       time_to_live = 150,
+      type = "flying-text"
+    },
+    ["sinking-text"] = {
+      flags = {
+        "not-on-map"
+      },
+      name = "sinking-text",
+      speed = -0.007,
+      time_to_live = 250,
       type = "flying-text"
     }
   },
@@ -45060,6 +45080,7 @@
     },
     ["stone-rock"] = {
       autoplace = {
+        max_probability = 0.25,
         order = "a[doodad]-a[rock]",
         peaks = {
           {
@@ -47347,6 +47368,9 @@
         }
       },
       icon = "__base__/graphics/technology/armor-making.png",
+      localised_description = {
+        "technology-description.armor-making-2"
+      },
       name = "armor-making-2",
       order = "g-a-b",
       prerequisites = {
@@ -47373,6 +47397,12 @@
         }
       },
       icon = "__base__/graphics/technology/armor-making.png",
+      localised_description = {
+        "technology-description.armor-making-3"
+      },
+      localised_name = {
+        "technology-name.armor-making-3"
+      },
       name = "armor-making-3",
       order = "g-a-c",
       prerequisites = {
@@ -49143,8 +49173,7 @@
       order = "b-b",
       prerequisites = {
         "engine",
-        "advanced-electronics",
-        "oil-processing"
+        "advanced-electronics"
       },
       type = "technology",
       unit = {
@@ -50535,8 +50564,7 @@
       order = "a-l-a",
       prerequisites = {
         "stone-walls",
-        "military-2",
-        "steel-processing"
+        "military-2"
       },
       type = "technology",
       unit = {
@@ -50703,6 +50731,45 @@
       order = "e-n-a",
       prerequisites = {
         "grenade-damage-4"
+      },
+      type = "technology",
+      unit = {
+        count = 600,
+        ingredients = {
+          {
+            "science-pack-1",
+            1
+          },
+          {
+            "science-pack-2",
+            1
+          },
+          {
+            "science-pack-3",
+            1
+          },
+          {
+            "alien-science-pack",
+            1
+          }
+        },
+        time = 45
+      },
+      upgrade = true
+    },
+    ["grenade-damage-6"] = {
+      effects = {
+        {
+          ammo_category = "grenade",
+          modifier = "0.2",
+          type = "ammo-damage"
+        }
+      },
+      icon = "__base__/graphics/technology/grenade-damage.png",
+      name = "grenade-damage-6",
+      order = "e-n-a",
+      prerequisites = {
+        "grenade-damage-5"
       },
       type = "technology",
       unit = {
@@ -52306,6 +52373,9 @@
         }
       },
       icon = "__base__/graphics/technology/power-armor-mk2.png",
+      localised_description = {
+        "technology-description.power-armor-2"
+      },
       name = "power-armor-2",
       order = "g-c-b",
       prerequisites = {
@@ -52489,7 +52559,6 @@
       order = "c-g-a",
       prerequisites = {
         "logistics-2",
-        "steel-processing",
         "engine"
       },
       type = "technology",
@@ -52679,7 +52748,6 @@
       name = "rocket-damage-1",
       order = "e-j-a",
       prerequisites = {
-        "rocketry",
         "alien-technology"
       },
       type = "technology",
@@ -52886,7 +52954,6 @@
       name = "rocket-silo",
       order = "k-a",
       prerequisites = {
-        "rocketry",
         "advanced-electronics-2",
         "rocket-speed-5",
         "speed-module-3",
@@ -52928,7 +52995,6 @@
       name = "rocket-speed-1",
       order = "e-j-f",
       prerequisites = {
-        "rocketry",
         "alien-technology"
       },
       type = "technology",
@@ -67826,8 +67892,7 @@
       fast_replaceable_group = "underground-belt",
       flags = {
         "placeable-neutral",
-        "player-creation",
-        "fast-replaceable-no-build-while-moving"
+        "player-creation"
       },
       icon = "__base__/graphics/icons/express-underground-belt.png",
       max_health = 60,
@@ -67916,8 +67981,7 @@
       fast_replaceable_group = "underground-belt",
       flags = {
         "placeable-neutral",
-        "player-creation",
-        "fast-replaceable-no-build-while-moving"
+        "player-creation"
       },
       icon = "__base__/graphics/icons/fast-underground-belt.png",
       max_health = 60,
@@ -68006,8 +68070,7 @@
       fast_replaceable_group = "underground-belt",
       flags = {
         "placeable-neutral",
-        "player-creation",
-        "fast-replaceable-no-build-while-moving"
+        "player-creation"
       },
       icon = "__base__/graphics/icons/underground-belt.png",
       max_distance = 5,
